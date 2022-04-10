@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pokeclone</title>
+    <!--Font + CSS-->
+    <link rel ="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+
+<div id="container">
+    <div id="battle-transition"></div>
+    <canvas></canvas>
+    <div id="combatUi">
+        <!--Opponent Info Box-->
+        <div id="opponentInfo">
+            <h1 style="font-size: 16px;">Draggle</h1>
+            <div id="opponentHpContainer">
+                <div id ="opponentHpBar"></div>
+                <div id ="opponentMaxHP"></div>
+            </div>
+        </div>
+        <!--Player Info Box-->
+        <div id="playerInfo">
+            <h1 style="font-size: 16px;">Emby</h1>
+            <div id="playerHpContainer">
+                <div id ="playerHpBar"></div>
+                <div id ="playerMaxHP"></div>
+            </div>
+        </div>
+
+        <div id="battleText">
+            <div id="dialogueText">
+            </div>
+            <div id="attacksText">
+            </div>
+    
+            <div id="typeText">
+                <b>Attack Type</b>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./data/audio.js"></script>
+<script src="./data/collisionsArray.js"></script>
+<script src="./data/battleArray.js"></script>
+<script src="./data/attacks.js"></script>
+<script src="./data/mons.js"></script>
+<script src="./classes.js"></script>
+<script src="./index.js"></script>
+<script src="./combat.js"></script>
+
+</body>
+
+</html>

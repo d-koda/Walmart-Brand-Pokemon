@@ -1,0 +1,134 @@
+body {
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+}
+
+button{
+    background-color: white;
+    border:0;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+button:hover{
+    background-color: lightgray;
+    font-size: 16;
+    font-family: 'Press Start 2P', cursive;
+}
+#container {
+    display: inline-block;
+    position: relative;
+}
+
+#combatUi {
+    display:none;
+}
+
+#battle-transition{
+    background-color:black;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position:absolute;
+    opacity:0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+#opponentInfo{
+    background-color: white;
+    width: 250px;
+    position:absolute;
+    top: 40px;
+    left: 40px;
+    border: 4px black solid;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+#opponentHpContainer{
+    position:relative;
+}
+
+#opponentHpBar{
+    background-color: green;
+    height:5px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+
+#opponentMaxHP{
+    background-color: #ccc;
+    height:5px;
+}
+
+#playerInfo{
+    background-color: white;
+    width: 250px;
+    position:absolute;
+    bottom: 200px;
+    right: 40px;
+    border: 4px black solid;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+#playerHpContainer{
+    position:relative;
+}
+
+#playerHpBar{
+    background-color: green;
+    height:5px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+
+#playerMaxHP{
+    background-color: #ccc;
+    height:5px;
+}
+
+#battleText{
+    background-color: white;
+    height: 140px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border: 4px black solid;
+    border-radius: 6px;
+    display:flex;
+}
+
+#attacksText{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 66.6%;
+}
+
+#typeText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 8px;
+    border-left: 4px black solid;
+    width: 33.3%;
+    font-size: 16px;
+}
+
+#dialogueText{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: white;
+    padding: 12px;
+    display: none;
+    cursor: pointer;
+}

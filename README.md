@@ -1,0 +1,1 @@
+Finished this project while watching Christopher4lis, https://github.com/chriscourses tutorial. Practiced a ton of for loops, arrow functions, and so on. Was a really cool project, and I enjoyed it a lot! Next up, learning C# and Unity!
